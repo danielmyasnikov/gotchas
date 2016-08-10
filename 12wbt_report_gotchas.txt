@@ -1,0 +1,15 @@
+=> used only in uat environment;
+=> templating system;
+==> execution of the report, methods (execute (gets cached for a template?/in general?, get_result? runs on top of execute, disregard the cache? / for a template? / in general?));
+==> params (optional);
+==> round_id (required);
+==> report_path (required);
+==> tasks to generate report;
+=> caching
+==> if the report is already generated look at the folder public/system/cache
+==> if you encounter this error, remove the cached report if you want a new one;
+=> how to run / debug / reload environment without restarting;
+=> check: what environment is used on bigQuery (UAT / Production). It's confusing as well;
+=> runs on 2 machines (fe1, fe2), cache is shared across machines;
+=> restart server: sudo god restart uat_12wbt_report_unicorn
+=> not all reports come from reporting, some come from code.gs file: https://script.google.com/a/redant.com.au/macros/d/Mckt7Wdy_C0BxlnQX-wF528X0M9LbtNk6/edit?uiv=2&mid=ACjPJvFsdILLawrW5ctnkuGTr3rdC6NTQ61SLWuF533cvrS-QFc-a5KboxyzGmeZPVU4SV94BcL5AH7b0OhCNVYNMFuidDA_oZe4J1PrPW55Ymn0kfyQ7FMHgY-0_GKli04tNt5ZSL8Ch_E
